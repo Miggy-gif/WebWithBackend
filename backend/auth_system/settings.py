@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':'auth_system',
         'USER': 'postgres',
-        'PASSWORD': 'password123',
+        'PASSWORD': '123123',
         'HOST' : 'localhost'
     }
 }
@@ -147,6 +147,10 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+}
+
+SIMPLE_JWT = {
+    'AUTH_HEADER_TYPES': ('JWT',),
 }
 
 DJOSER = {
